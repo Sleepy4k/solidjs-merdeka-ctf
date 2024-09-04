@@ -1,0 +1,1 @@
+import{f as e,b as n,o as s}from"./index-Ciwh1RRb.js";function i(){const o=e(),{state:t}=n();return s(()=>{if(!t||t==null||t==null||!t?.canAccess)o("/",{replace:!0});else{const a=window.location.href;window.location.href=a.split("#")[0]+"flag.html?canAccess"}}),[]}export{i as default};

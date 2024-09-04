@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Benjamin4k">
+    <meta name="description" content="Simple landing page to disturb">
+    <meta name="keywords" content="benjamin4k, ctf, merdeka">
+    <title>Blank | Merdeka CTF</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: #007BFF;
+      }
+      .link {
+        color: #007BFF;
+        margin-top: 5vh;
+        text-decoration: none;
+      }
+      .container {
+        display: none;
+      }
+      .flagged {
+        display: none;
+      }
+      .hidden-gem {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blank</h1>
+      <p>
+        Nothing to see here
+      </p>
+      <a id="home-btn" class="link">
+        <button type="button">Back to Home</button>
+      </a>
+      <span class="flagged">
+        <br />
+        Flag: <b class="flag-value"></b>
+      </span>
+    </div>
+
+    <script>
+      // Make function getKey to get ontop flag
+      (function(_0x4b2bc4,_0x23ab15){const _0x5ded12=_0x3d02,_0x456b53=_0x4b2bc4();while(!![]){try{const _0x4210da=-parseInt(_0x5ded12(0x1ef))/0x1*(-parseInt(_0x5ded12(0x1ec))/0x2)+parseInt(_0x5ded12(0x1f5))/0x3+-parseInt(_0x5ded12(0x1f4))/0x4*(parseInt(_0x5ded12(0x1ed))/0x5)+-parseInt(_0x5ded12(0x1eb))/0x6+parseInt(_0x5ded12(0x1f6))/0x7+parseInt(_0x5ded12(0x1f1))/0x8*(-parseInt(_0x5ded12(0x1ee))/0x9)+parseInt(_0x5ded12(0x1f2))/0xa;if(_0x4210da===_0x23ab15)break;else _0x456b53['push'](_0x456b53['shift']());}catch(_0x1c31f7){_0x456b53['push'](_0x456b53['shift']());}}}(_0x2ac3,0x2840a));const x3d='sirkeldanathur';function getKey(){const _0x30425c=_0x3d02,_0x158713=x3d;console[_0x30425c(0x1f0)](_0x158713),alert(_0x30425c(0x1f3));}function _0x3d02(_0x27f6de,_0x33bb15){const _0x2ac3da=_0x2ac3();return _0x3d02=function(_0x3d020c,_0x57899a){_0x3d020c=_0x3d020c-0x1eb;let _0x17879e=_0x2ac3da[_0x3d020c];return _0x17879e;},_0x3d02(_0x27f6de,_0x33bb15);}function _0x2ac3(){const _0x76c84c=['3326230NxVHGr','kunci\x20ada\x20di\x20console','52gaXjUF','27954YbFmDW','1401176uTatPu','1946592ZLEEdD','218ijEcKf','51070THmaFh','752058zBWiTj','2267kSycpy','log','16IFJFSu'];_0x2ac3=function(){return _0x76c84c;};return _0x2ac3();}
+    </script>
+    <script>
+      // Show container
+      const container = document.getElementsByClassName("container")[0];
+      container.style.display = "block";
+
+      // Make redirect from blank to home
+      const homeBtn = document.getElementById("home-btn");
+      homeBtn.addEventListener("click", () => {
+        let currentUrl = window.location.href;
+        window.location.href = currentUrl.replace("blank.html", "").split("?")[0];
+      });
+
+      // Get flag from URL params
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has("ontop") && urlParams.get("ontop") == x3d) {
+        const _0x39c3aa=_0x2b75;(function(_0x5f0d8d,_0x4f750c){const _0x51535c=_0x2b75,_0x1665f9=_0x5f0d8d();while(!![]){try{const _0x319a6e=-parseInt(_0x51535c(0x1a4))/0x1+-parseInt(_0x51535c(0x1a7))/0x2*(-parseInt(_0x51535c(0x1a2))/0x3)+parseInt(_0x51535c(0x1ae))/0x4*(parseInt(_0x51535c(0x1ab))/0x5)+parseInt(_0x51535c(0x1b0))/0x6*(parseInt(_0x51535c(0x1a9))/0x7)+-parseInt(_0x51535c(0x1a6))/0x8*(-parseInt(_0x51535c(0x1af))/0x9)+-parseInt(_0x51535c(0x1a0))/0xa+-parseInt(_0x51535c(0x1a5))/0xb;if(_0x319a6e===_0x4f750c)break;else _0x1665f9['push'](_0x1665f9['shift']());}catch(_0x2edd23){_0x1665f9['push'](_0x1665f9['shift']());}}}(_0x3353,0xdb54c));const flagged=document[_0x39c3aa(0x1ac)](_0x39c3aa(0x1a8))[0x0];function _0x3353(){const _0xcc47f4=['block','303nphrGH','style','192333YcLJcr','6083dokqmJ','10889296mRGHch','10886WVmXin','flagged','24129vMKKbY','innerText','25AyufLU','getElementsByClassName','display','641284Smbkqp','9ibfkeV','72gjCLWx','16626080yfkPcy'];_0x3353=function(){return _0xcc47f4;};return _0x3353();}flagged[_0x39c3aa(0x1a3)][_0x39c3aa(0x1ad)]=_0x39c3aa(0x1a1);const flagValue=document['getElementsByClassName']('flag-value')[0x0];function _0x2b75(_0x17f4f5,_0x30dcb2){const _0x33534a=_0x3353();return _0x2b75=function(_0x2b755e,_0x1f715a){_0x2b755e=_0x2b755e-0x1a0;let _0x49363f=_0x33534a[_0x2b755e];return _0x49363f;},_0x2b75(_0x17f4f5,_0x30dcb2);}flagValue[_0x39c3aa(0x1aa)]='01110011|01100101|01101100|01100001|01101101|01100001|01110100|00100000|01100001|01101110|01100100|01100001|00100000|01101011|01100101|01101110|01100001|00100000|01110000|01110010|01100001|01101110|01101011|00101100|00100000|01100011|01101111|01100010|01100001|00100000|01101100|01100001|01100111|01101001|00100000|01111001|01100001|00100000|01110111|01101011|01110111|01101011';
+      }
+    </script>
+
+    <noscript>
+      <div>
+        <h1>Blank</h1>
+        <p>
+          Maaf, kamu tidak bisa mengakses laman ini karena javascript tidak
+          aktif untuk website "<i>sleepy4k.github.io/solidjs-merdeka-ctf</i>"
+        </p>
+      </div>
+
+      <span class="hidden-gem">
+        Disini ada flag yang kamu cari, tapi kamu harus aktifkan javascript
+        terlebih dahulu
+        <br />
+        Kata kunci nya hidden param ... hehehe
+      </span>
+    </noscript>
+  </body>
+</html>

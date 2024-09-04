@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+Crawl-delay: 5
+Disallow: /#/login
+Disallow: /assets/
+Disallow: /blank.html
+Disallow: /flag.html
+Disallow: /README.md
+Disallow: /robots.txt
+Disallow: /z.txt
